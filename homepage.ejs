@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <title>Sweet Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="c1">Sweets Shop</h1>
+
+    <h3><a href="/create" class ="c2">Add New Fruit</a></h3>
+    <h3><a href="/updatestock" class ="c2">Update Stock</a></h3>
+    <h3><a href="/deleteproduct" class ="c2">Delete Fruit</a></h3>
+    <h2> Welcome </h2>
+    <p> The fruit and vegetable market is taken
+     to be the sale to consumers of fresh fruit
+     d fresh vegetables, including potatoes.
+    Fresh fruit and fresh vegetables are the two main sectors of
+    the market. Fresh fruit includes products such as apples
+    and pears, bananas, berries, grapes, tropical fruits,
+    stone fruits and citrus fruits. The vegetables sector includes 
+    products such as salad vegetables, potatoes, root vegetables, etc.
+    This industry comprises establishments primarily engaged in 
+    retailing fresh fruits and vegetables.</p>
+<p>
+The fruit and vegetable industry is highly decentralized in India. 
+The diverse agro-climatic zones make it possible to grow almost 
+all varieties of fresh fruits and green vegetables in India.</p>
+<center>
+    <table>
+        <tr>
+            <th>Product ID</th>
+            <th>Category</th> 
+            <th>Stock</th>
+            <th>Price</th>
+        </tr>
+        <% for(var i=0;i<data.length;i++){ %>
+            <tr>
+                <td><%= data[i].id%></td>
+                <td><%= data[i].Name%></td>
+                <td><%= data[i].stock%></td>
+                <td><%= data[i].price%></td>
+            </tr>
+        <% } %>
+    </table>
+</center>
+<footer>
+    &copy Copyright 2021 FreshFruits. 
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.c1 {
+  text-align: center;
+  background-color: #999;
+}
+.c2 {
+  text-decoration: none;
+  background-color: #af8;
+}
+body {
+  background-color: #aaa;
+}
+p {
+  text-shadow: #fff;
+  text-indent: 1in;
+  text-transform: inherit;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+th {
+  background-color: blue;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #bbb;
+}
+tr:nth-child(odd) {
+  background-color: #fff;
+}
